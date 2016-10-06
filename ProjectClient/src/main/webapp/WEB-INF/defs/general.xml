@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+				<!-- Some templates -->
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+	</definition>
+	
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="index" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="adminClient" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminClient.jsp" />
+	</definition>
+	
+	<definition name="adminPanel" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminPanel.jsp" />
+	</definition>
+	
+	<definition name="adminCountry" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminCountry.jsp" />
+	</definition>
+	
+	<definition name="adminRegion" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminRegion.jsp" />
+	</definition>
+	
+	<definition name="adminCity" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminCity.jsp" />
+	</definition>
+	
+	<definition name="adminStreet" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminStreet.jsp" />
+	</definition>
+	
+	<definition name="adminAdress" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminAdress.jsp" />
+	</definition>
+	
+	<definition name="adminName" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminName.jsp" />
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="registration" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/registration.jsp" />
+	</definition>
+	
+	<definition name="region" extends="common">
+		<put-attribute name="title" value="admin" />
+		<put-attribute name="body" value="/WEB-INF/views/region.jsp" />
+	</definition>
+</tiles-definitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+				Some templates
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+	</definition>
+	
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="index" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="admin*" extends="common">
+		<put-attribute name="title" value="{1}" />
+		<put-attribute name="body" value="/WEB-INF/views/admin{1}.jsp" />
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition> -->
+
+
+<!--	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+	</definition>
+	
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="index" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="admin" extends="common">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="body" value="/WEB-INF/views/adminPanel.jsp" />
+	</definition>
+	<definition name="clientPanel" extends="common">
+		<put-attribute name="title" value="ClientPanel" />
+		<put-attribute name="body" value="/WEB-INF/views/clientPanel.jsp" />
+	</definition>
+	<definition name="adressPanel" extends="common">
+		<put-attribute name="title" value="Adress Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/adressPanel.jsp" />
+	</definition>
+	<definition name="namePanel" extends="common">
+		<put-attribute name="title" value="Name Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/namePanel.jsp" />
+	</definition>
+	<definition name="adminCountry" extends="common">
+		<put-attribute name="title" value="Country Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/countryPanel.jsp" />
+	</definition>
+	<definition name="regionPanel" extends="common">
+		<put-attribute name="title" value="Region Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/regionPanel.jsp" />
+	</definition>
+	<definition name="cityPanel" extends="common">
+		<put-attribute name="title" value="City Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/cityPanel.jsp" />
+	</definition>
+	<definition name="regionPanel" extends="common">
+		<put-attribute name="title" value="Region Panel" />
+		<put-attribute name="body" value="/WEB-INF/views/regionPanel.jsp" />
+	</definition> -->
